@@ -1,22 +1,28 @@
 /*
-Programa de calificaciones
+Programa usando arreglo
 */
 #include<stdio.h>
-int arreglo [10];
-int moda  [10];
-int i;
-float prom;
+
 int main()
 {
-	printf("Programa que realiza el promedio de calificaciones");
-	for(i=0;i<10;i++)
+	int i,num;
+	float calificacion,acum, promedio;
+	int arreglo[10]
+	
+	printf("Introducir calificaciones.\n");
+	scanf("%d", &num);
+	
+	for(i=0;i<=10;i++)
 	{
-		printf("Calificacion a promediar: ");
-		scanf("%d \n", &arreglo [i]);
-		prom=prom+arreglo [i];
+		printf("Introducir la calificacion %d. \n", i);
+		scanf("%f", &calificacion);
+		
+		acum += calificacion;
 	}
 	
-	prom=prom/10;
-	printf("El promedio es: %f", prom);
+	promedio = acum/num;
+	
+	printf(" El promedio es = %.1f", promedio);
+
 }
 	
